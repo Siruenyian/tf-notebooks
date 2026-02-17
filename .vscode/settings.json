@@ -1,0 +1,9 @@
+{
+    "python-envs.pythonProjects": [],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.stubPath": "",
+    "python.analysis.extraPaths": []
+}
