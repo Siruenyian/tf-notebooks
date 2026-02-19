@@ -1,10 +1,15 @@
-services:  
-  learn-dl:
-    image: nvcr.io/nvidia/tensorflow:25.02-tf2-py3
+services:
+  bootcamp-dev:
+    # blackwell gpus 
+    # image: nvcr.io/nvidia/tensorflow:25.02-tf2-py3
+    # pascal gpus 
+    # image: nvcr.io/nvidia/tensorflow:23.10-tf2-py3
+    image: ghcr.io/epsindo-ai/tensorflow_jupyter:24.05-tf2-py3-july
     container_name: learn-dl
     restart: unless-stopped
     volumes:
-      - D:/Github/tf-notebooks:/app
+      # - D:/Github/tf-notebooks:/app
+      - /home/[user]/learn/tf-notebooks:/app
     working_dir: /app
     command: tail -f /dev/null
     deploy:
